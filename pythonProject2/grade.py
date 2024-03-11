@@ -1,12 +1,13 @@
 n1=int(input("enter the marks you got :"))
 def mark(n1):
     if (n1>=90):
-        print("you got A grade")
+        return ("grade A")
     elif (n1>=80):
-        print("you got B grade")
+        return (" grade B")
     elif (n1>=70):
-        print("you got C grade")
+        return (" grade C")
     else:
-        print("------------better luck next time--------------")
+        return ("grade D")
 
-mark(n1)
+res=mark(n1)
+print(res)

@@ -3,13 +3,14 @@ from grade import mark
 
 class testmar(unittest.TestCase):
     def testAdd(self):
-        self.assertTrue(90,"A")
+        self.assertEqual(mark(90)," grade A")
     def testAdd(self):
-        self.assertTrue(80,"B")
+        self.assertEqual(mark(80),"grade B")
     def testAdd(self):
-        self.assertTrue(70,"C")
+        self.assertEqual(mark(70),"grade C")
     def testAdd(self):
-        self.assertTrue(60,"D")
+
+        self.assertEqual(mark(60),"grade D")
 
 if __name__=='__main__':
     unittest.main()
